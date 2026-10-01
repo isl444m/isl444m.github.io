@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Academic Pro | مرافقك المثالي نحو النجاح</title>
+  <meta name="description" content="خدمات أكاديمية ورقمية احترافية لمرافقة الطلبة: بحوث، مذكرات تخرج، تنسيق، عروض تقديمية، تحليل إحصائي SPSS وEViews، سيرة ذاتية وترجمة.">
+  <meta name="theme-color" content="#ffffff">
+  <!-- بدّل الرابط أدناه برابط موقعك النهائي بعد النشر -->
+  <link rel="canonical" href="https://YOUR-SITE-URL/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Academic Pro | مرافقك المثالي نحو النجاح">
+  <meta property="og:description" content="خدمات أكاديمية ورقمية احترافية لمرافقة الطلبة وإنجاز أعمالهم بجودة وتنظيم.">
+  <meta property="og:image" content="https://YOUR-SITE-URL/logo.png">
+  <meta property="og:url" content="https://YOUR-SITE-URL/">
+  <meta property="og:locale" content="ar_DZ">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <style>
+/* ===== الألوان: غيّرها من هنا فقط ===== */
+:root{
+  --navy:#0b2a4a;      /* اللون الأساسي (من الشعار) */
+  --teal:#0e9a8f;      /* اللون الثانوي (من الشعار) */
+  --bg:#ffffff;
+  --soft:#f4f8f9;
+  --line:#e2eaee;
+  --text:#1c2b3a;
+  --muted:#5f7282;
+  --ig:#d6249f; --fb:#1877f2; --tg:#229ed9; --wa:#1faa59; --ml:var(--navy);
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:"Segoe UI",Tahoma,"Noto Sans Arabic",system-ui,-apple-system,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.6;
+  padding:max(20px,env(safe-area-inset-top)) 16px max(24px,env(safe-area-inset-bottom));
+  display:flex;justify-content:center;
+}
+.card{width:100%;max-width:460px}
+.hero{text-align:center;padding:12px 0 22px}
+.logo{width:132px;height:132px;border-radius:50%;border:3px solid var(--line);box-shadow:0 0 0 6px var(--soft)}
+h1{font-size:2.1rem;line-height:1.2;margin-top:18px;color:var(--navy);letter-spacing:.2px}
+.slogan{margin-top:6px;font-size:1.15rem;font-weight:700;color:var(--teal)}
+.about{margin:12px auto 0;max-width:34ch;color:var(--muted);font-size:.98rem}
+
+.links{display:grid;gap:10px}
+.link{
+  display:flex;align-items:center;gap:14px;padding:12px 14px;min-height:64px;
+  background:#fff;border:1px solid var(--line);border-radius:16px;
+  color:var(--text);text-decoration:none;transition:transform .15s,border-color .15s,box-shadow .15s;
+}
+.link:hover,.link:focus-visible{transform:translateY(-2px);border-color:var(--teal);box-shadow:0 6px 18px rgba(11,42,74,.08)}
+.link:active{transform:scale(.99)}
+.ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#fff;flex:none}
+.ico svg{width:24px;height:24px}
+.ig .ico{background:var(--ig)}.fb .ico{background:var(--fb)}.tg .ico{background:var(--tg)}
+.wa .ico{background:var(--wa)}.ml .ico{background:var(--ml)}
+.txt{font-weight:700;font-size:1.05rem;display:flex;flex-direction:column;line-height:1.3}
+.txt small{font-weight:400;font-size:.85rem;color:var(--muted)}
+.link[hidden]{display:none}
+
+.copy{
+  display:flex;align-items:center;justify-content:center;gap:8px;min-height:46px;
+  background:var(--soft);border:1px dashed var(--teal);border-radius:14px;
+  color:var(--navy);font:inherit;font-weight:600;cursor:pointer;transition:background .15s;
+}
+.copy:hover{background:#e8f3f3}
+.copy svg{width:18px;height:18px}
+
+.services{margin-top:30px}
+h2{font-size:1.2rem;color:var(--navy);margin-bottom:12px;padding-right:12px;border-right:4px solid var(--teal)}
+.services ul{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.services li{background:var(--soft);border-radius:12px;padding:12px;font-size:.95rem;font-weight:600;color:var(--navy);text-align:center}
+
+.cta{
+  display:block;margin-top:26px;padding:17px;text-align:center;text-decoration:none;
+  background:var(--navy);color:#fff;font-weight:700;font-size:1.15rem;border-radius:16px;
+  transition:background .15s,transform .15s;
+}
+.cta:hover,.cta:focus-visible{background:var(--teal);transform:translateY(-2px)}
+
+footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);text-align:center;display:grid;gap:2px}
+footer strong{color:var(--navy)}
+footer span{color:var(--teal);font-weight:600;font-size:.9rem}
+footer small{color:var(--muted);margin-top:6px}
+
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+
+/* حركة دخول واحدة عند فتح الصفحة */
+@media (prefers-reduced-motion:no-preference){
+  .hero,.links>*,.services,.cta{animation:in .5s ease both}
+  .links>*:nth-child(1){animation-delay:.08s}.links>*:nth-child(2){animation-delay:.14s}
+  .links>*:nth-child(3){animation-delay:.2s}.links>*:nth-child(4){animation-delay:.26s}
+  .links>*:nth-child(5){animation-delay:.32s}.links>*:nth-child(6){animation-delay:.38s}
+  .services{animation-delay:.44s}.cta{animation-delay:.5s}
+  @keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+
+</style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M21.5 3.5 2.5 10.8l6.2 2.3 2.3 6.4 3.1-4.2 4.8 3.6zM8.7 13.1l12.8-9.6"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 21l1.6-4.6A9 9 0 1 1 8 19.6z"/><path fill="currentColor" d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 8 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <main class="card">
+    <header class="hero">
+      <img class="logo" src="logo.png" width="132" height="132" alt="شعار Academic Pro">
+      <h1>Academic Pro</h1>
+      <p class="slogan">مرافقك المثالي نحو النجاح</p>
+      <p class="about">خدمات أكاديمية ورقمية احترافية لمرافقة الطلبة وإنجاز أعمالهم بجودة وتنظيم.</p>
+    </header>
+
+    <nav class="links" aria-label="وسائل التواصل">
+      <a class="link ig" data-link="instagram" target="_blank" rel="noopener"><span class="ico"><svg><use href="#i-ig"/></svg></span><span class="txt">Instagram<small>تابعنا على إنستغرام</small></span></a>
+      <a class="link fb" data-link="facebook" target="_blank" rel="noopener"><span class="ico"><svg><use href="#i-fb"/></svg></span><span class="txt">Facebook<small>صفحتنا على فيسبوك</small></span></a>
+      <a class="link tg" data-link="telegram" target="_blank" rel="noopener"><span class="ico"><svg><use href="#i-tg"/></svg></span><span class="txt">Telegram<small>راسلنا على تيليغرام</small></span></a>
+      <a class="link wa" data-link="whatsapp" target="_blank" rel="noopener"><span class="ico"><svg><use href="#i-wa"/></svg></span><span class="txt">WhatsApp<small id="waNumber" dir="ltr"></small></span></a>
+      <a class="link ml" data-link="email"><span class="ico"><svg><use href="#i-mail"/></svg></span><span class="txt">Email<small id="mailText" dir="ltr"></small></span></a>
+      <button class="copy" id="copyBtn" type="button"><svg><use href="#i-copy"/></svg><span id="copyLabel">نسخ رقم WhatsApp</span></button>
+    </nav>
+
+    <section class="services" aria-labelledby="sv">
+      <h2 id="sv">خدماتنا</h2>
+      <ul>
+        <li>البحوث الأكاديمية</li>
+        <li>مذكرات التخرج</li>
+        <li>تنسيق المذكرات</li>
+        <li>العروض التقديمية</li>
+        <li>التحليل الإحصائي</li>
+        <li>السيرة الذاتية</li>
+        <li>الترجمة</li>
+        <li>الخدمات المكتبية</li>
+      </ul>
+    </section>
+
+    <a class="cta" data-link="whatsapp" target="_blank" rel="noopener">تواصل معنا الآن</a>
+
+    <footer>
+      <strong>Academic Pro</strong>
+      <span>مرافقك المثالي نحو النجاح</span>
+      <small>© <span id="year">2026</span> Academic Pro</small>
+    </footer>
+  </main>
+
+  <script>
+/* ===== الملف الوحيد الذي تعدّل فيه روابطك ومعلوماتك =====
+   عدّل القيم بين علامتي الاقتباس فقط، ثم احفظ وأعد الرفع. */
+window.SITE_CONFIG = {
+  instagram: "https://www.instagram.com/academic.pro41",
+  facebook:  "https://www.facebook.com/share/19Pm1K37SN/",
+  telegram:  "https://t.me/academicpro41",
+  email:     "academicpro41@gmail.com",
+
+  // رقم واتساب بالصيغة الدولية بدون + ولا 0 في البداية (الجزائر = 213)
+  whatsappNumber: "213793491229",
+  // الرقم الذي يظهر للزبون ويُنسخ عند الضغط على "نسخ الرقم"
+  whatsappDisplay: "0793491229",
+  // الرسالة الجاهزة التي تظهر في واتساب عند الضغط على الزر
+  whatsappMessage: "مرحبا Academic Pro، أريد الاستفسار عن خدماتكم."
+};
+
+</script>
+  <script>
+(function () {
+  var c = window.SITE_CONFIG || {};
+  var isSet = function (v) { return v && v.indexOf("_HERE") === -1; };
+
+  var waUrl = "https://wa.me/" + c.whatsappNumber +
+    (c.whatsappMessage ? "?text=" + encodeURIComponent(c.whatsappMessage) : "");
+  var urls = {
+    instagram: c.instagram,
+    facebook: c.facebook,
+    telegram: c.telegram,
+    whatsapp: isSet(c.whatsappNumber) ? waUrl : "",
+    email: isSet(c.email) ? "mailto:" + c.email : ""
+  };
+
+  // ضبط الروابط، وإخفاء أي زر لم يُضبط رابطه
+  document.querySelectorAll("[data-link]").forEach(function (a) {
+    var u = urls[a.dataset.link];
+    if (isSet(u)) { a.href = u; } else { a.hidden = true; }
+  });
+
+  document.getElementById("waNumber").textContent = c.whatsappDisplay || "";
+  document.getElementById("mailText").textContent = c.email || "";
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // نسخ رقم واتساب
+  var btn = document.getElementById("copyBtn"), label = document.getElementById("copyLabel");
+  if (!isSet(c.whatsappNumber)) { btn.hidden = true; }
+  btn.addEventListener("click", function () {
+    var text = c.whatsappDisplay || c.whatsappNumber;
+    var done = function () {
+      label.textContent = "تم النسخ ✓";
+      setTimeout(function () { label.textContent = "نسخ رقم WhatsApp"; }, 2000);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done);
+    } else {
+      var t = document.createElement("textarea");
+      t.value = text; document.body.appendChild(t); t.select();
+      try { document.execCommand("copy"); done(); } catch (e) {}
+      document.body.removeChild(t);
+    }
+  });
+})();
+
+</script>
+</body>
+</html>
